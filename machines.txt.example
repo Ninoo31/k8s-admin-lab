@@ -1,0 +1,8 @@
+# Copie ce fichier en machines.txt et remplace par TES valeurs
+# (relevées au module 0 avec : hostname -s ; hostname -I)
+#
+# IP            HOSTNAME       RÔLE     SOUS-RÉSEAU DES PODS
+# La 1re ligne "server" = control plane + poste d'admin (jumpbox)
+10.0.0.10       controlplane   server   -
+10.0.0.11       node01         worker   10.200.0.0/24
+10.0.0.12       node02         worker   10.200.1.0/24
